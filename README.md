@@ -2,4 +2,4 @@
 
 ## 更新日志
 
-[CHANGELOG]('./CHANGELOG.md')
+[CHANGELOG]('CHANGELOG.md')
