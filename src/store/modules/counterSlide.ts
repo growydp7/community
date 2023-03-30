@@ -16,7 +16,6 @@ const counterSlide = createSlice({
   initialState,
   reducers: {
     increment(state) {
-      console.log('reducer', state)
       state.value++
     },
     decrement(state) {
@@ -29,4 +28,5 @@ const counterSlide = createSlice({
 })
 
 export const { increment, decrement, incrementByAmount } = counterSlide.actions
+
 export default counterSlide.reducer
