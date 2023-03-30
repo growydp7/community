@@ -1,4 +1,5 @@
 /// <reference types="vitest" />
+import { resolve } from 'path'
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import vitePluginImp from 'vite-plugin-imp'
@@ -16,6 +17,11 @@ export default defineConfig({
       ],
     })
   ],
+  resolve: {
+    alias: [
+      { find: '@', replacement: resolve(__dirname, 'src') }
+    ]
+  },
   test: {
     globals: true,
     environment: 'happy-dom',
